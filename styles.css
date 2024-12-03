@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    margin-top: 30px; /* Adds gap from top */
+    margin-bottom: 30px; /* Adds gap from bottom */
+  }
+  
+  .container {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto; /* Centers the container */
+  }
+  
+  .left-side {
+    background-color: #2d3e50;
+    color: #fff;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .left-side .profile {
+    margin-bottom: 20px;
+  }
+  
+  .left-side .profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .left-side h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .left-side p {
+    font-size: 16px;
+    color: #bbb;
+  }
+  
+  .left-side .contact ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .left-side .contact ul li {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .left-side .contact ul li i {
+    margin-right: 8px;
+    color: #f39c12;
+  }
+  
+  .right-side {
+    padding: 20px;
+    width: 70%;
+  }
+  
+  .right-side h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #2d3e50;
+  }
+  
+  .right-side p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .right-side ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .right-side ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .right-side ul li b {
+    font-weight: 600;
+  }
+  
+  .skills ul, .interests ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .skills ul li, .interests ul li {
+    background-color: #2d3e50;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .skills ul li i, .interests ul li i {
+    margin-right: 8px;
+    color: #f39c12;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .left-side, .right-side {
+      width: 100%;
+    }
+  }
+  
